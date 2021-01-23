@@ -22,10 +22,6 @@ test("Expect LocationFromLocalStorage Zoom to be 12 ", () => {
   expect((LocationFromLocalStorage.zoom = 12));
 });
 
-test("Expect LocationFromLocalStorage Zoom to be 12 ", () => {
-  expect((LocationFromLocalStorage.zoom = 12));
-});
-
 test("Expect LocationFromLocalStorage Zoom to greater than 3", () => {
   expect(LocationFromLocalStorage.zoom > 3);
 });
