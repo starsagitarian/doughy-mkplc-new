@@ -2,11 +2,11 @@
 
 import React,  {useState, useContext} from 'react';
 import {Link} from 'react-router-dom';
-import DB from '../DB/db';
-import MapFinder from './Map/Map'
+import DB from '../../DB/db.json';
+import MapFinder from '../Map/Map'
 import {Button} from '@material-ui/core';
-import {LocationContext} from '../Context/LocationContext';
-import { PickupOrDeliveryContext } from '../Context/PickupOrDelivery';
+import {LocationContext} from '../../Context/LocationContext';
+import { PickupOrDeliveryContext } from '../../Context/PickupOrDelivery';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 const Bakery = () => {
   const classes = useStyles();
   const [isClicked, setIsClicked] = useState(false);
-  const [isForDelivery, setIsForDelivery] = useContext(PickupOrDeliveryContext)
+  const [isForDelivery, setIsForDelivery] = useContext(PickupOrDeliveryContext);
   const [coordinates, _, nearby] = useContext(LocationContext);
   const db= DB;
 
