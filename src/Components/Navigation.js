@@ -5,6 +5,7 @@ import { AppContext } from "../Context/CartContext";
 import { Link } from "react-router-dom";
 import HomeIcon from "@material-ui/icons/Home";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+import Intro from "./Intro";
 
 function Navigation() {
   const [cart, _] = useContext(AppContext);
@@ -37,6 +38,15 @@ function Navigation() {
                 </li>
                 <li className='top-lef-link'>
                   <Link to='/About'>Sign In</Link>
+                </li>
+                <li className='top-lef-link'>
+                  <Link to='/Customers'>Customers</Link>
+                </li>
+                <li className='top-lef-link'>
+                  <Link to='/Reviews'>Reviews</Link>
+                </li>
+                <li className='top-lef-link'>
+                  <Intro />
                 </li>
               </ul>
             </div>
