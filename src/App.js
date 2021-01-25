@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./Styles/App.css";
 import Main from "./Components/Main";
 import Navigation from "./Components/Navigation";
-import Users from "./Components/Users";
+import About from "./Components/About";
+import Customers from "./Components/Customers";
+import Reviews from "./Components/Reviews";
 import Detail from "./Components/Detail";
 import { Provider } from "./Context/CartContext";
 import Cart from "./Components/Cart";
@@ -26,7 +28,9 @@ function App() {
                 <Switch>
                   <Route exact path='/' component={Main} />
                   <Route exact path='/Bakeries' component={Bakery} />
-                  <Route exact path='/About' component={Users} />
+                  <Route exact path='/About' component={About} />
+                  <Route exact path='/Customers' component={Customers} />
+                  <Route exact path='/Reviews' component={Reviews} />
                   <Route exact path='/Cart' component={Cart} />
                   <Route exact path='/bakery/:id' component={Detail} />
                   <Route exact path='/Map' component={Map} />
