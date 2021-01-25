@@ -1,0 +1,20 @@
+[
+  {
+    "bakery": "Cafe d'Avignon Essex",
+    "customer":"Baiju",
+    "review":"Best!",
+    "score":5
+  },
+  {
+    "bakery": "Cafe d'Avignon Essex",
+    "customer":"Connor",
+    "review":"Good!",
+    "score":4
+  },
+  {
+    "bakery": "Pain d'Avignon",
+    "customer":"Wladimir",
+    "review":"Top!",
+    "score":5
+  }
+]

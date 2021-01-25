@@ -9,10 +9,9 @@ export default async function getUsers() {
     const response = await axios.get(
       "https://jsonplaceholder.typicode.com/users"
     );
-    console.log(response.data);
-
+    console.log("JS customers from api: ", response.data);
     return response.data;
   } catch (error) {
-    //console.error(error);
+    console.error(error);
   }
 }
