@@ -12,8 +12,6 @@ export default function BakeryBool() {
   return (
     <div
       style={{ background: "orange", color: "white", width: 100, height: 100 }}
-    >
-      <Button onClick={() => handleMap()} size='small' color='secondary'>
         BOOL
       </Button>
       <button onClick={() => handleMap()}>🕵️‍♂️</button>

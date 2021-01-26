@@ -27,4 +27,3 @@ test("If button is clicked should say TRUE / FALSE ... ", () => {
   ReactDOM.render(<BakeryBool />, cont);
   console.log("TEST: BakeryBool TEXTcontent: ", cont.textContent);
   expect(cont.textContent).toMatch("FALSE");
-});
