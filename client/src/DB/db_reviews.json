@@ -1,0 +1,20 @@
+[
+  {
+    "bakery": "Cafe d'Avignon Essex",
+    "customer":"Baiju",
+    "description":"This was my first experience of afternoon tea and I thoroughly enjoyed it, the atmosphere was very relaxed, the place was clean and professional and the service was terrific!",
+    "score":5
+  },
+  {
+    "bakery": "Pain d'Avignon",
+    "customer":"Connor",
+    "description":"Excellent food and fantastic service lots of nice new food to choose from I recommend the fresh toast cause its amazing the service is why I go there love this place.",
+    "score":4
+  },
+  {
+    "bakery": " Cafe d'Avignon Dekalb Market",
+    "customer":"Wladimir",
+    "description":"Absolutely loved this place. Mum and I celebrated her 80th birthday here. Szylvia looked after us, serving a beautiful array of sandwiches, scones and cakes. All very fresh and tasty. When we were leaving I mentioned that it was mum's birthday and the lovely manager let her choose a piece of cake from their delicious selection. I got the deal on Groupon and it was a lovely treat for mum. She also got a brief history lesson on Valerie's. We boxed up what we couldn't eat for the kids to enjoy at home.",
+    "score":5
+  }
+]

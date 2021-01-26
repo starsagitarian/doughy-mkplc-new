@@ -3,6 +3,8 @@ import About from "./About";
 import React, { createElement } from "react";
 import ReactDOM from "react-dom";
 
+// primitive UI testing without snapshot
+
 test("About Component should be ... ", () => {
   // dummy - works
   /*   const cont = document.createElement("div");
@@ -13,7 +15,7 @@ test("About Component should be ... ", () => {
   const cont = document.createElement("div");
   ReactDOM.render(<About />, cont);
 
-  // it works - but it is too strict - to exact
+  // it works - but it is too strict - to0 exact
   // expect(cont.innerHTML).toBe("<p>About Page</p>");
 
   expect(cont.textContent).toMatch("About Page");

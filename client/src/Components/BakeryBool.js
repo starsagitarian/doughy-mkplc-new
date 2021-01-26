@@ -8,6 +8,7 @@ export default function BakeryBool() {
     setIsClicked(!isClicked);
   };
 
+  // Micro component to test UI and button click
   // Block for TEST (mock refactor and func test)
   return (
     <div
