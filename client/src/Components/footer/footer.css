@@ -1,0 +1,11 @@
+  .main-footer {
+      display: flex;
+      align-items: flex-end;
+      color: white;
+      justify-content: space-between;
+      background-color: #dc3545;
+      padding-top: 3em;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
