@@ -13,6 +13,7 @@ export default function BakeryBool() {
   return (
     <div
       style={{ background: "orange", color: "white", width: 100, height: 100 }}
+      data-testid='bakeryBool'
     >
       <Button onClick={() => handleMap()} size='small' color='secondary'>
         BOOL
