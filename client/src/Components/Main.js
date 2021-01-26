@@ -2,10 +2,10 @@ import React from 'react';
 // import {Link} from 'react-router-dom';
 import DB from '../DB/db.json';
 // import Tags from './Tags';
-import  Bakery from './Bakery';
+import  Bakery from './Bakery/Bakery';
 import SearchLocation from './SearchLocation';
 import Landing from './Landing.js';
-import Footer from './Footer';
+import Footer from './footer/Footer';
 import Parallax from 'react-rellax';
 
 function Main () {

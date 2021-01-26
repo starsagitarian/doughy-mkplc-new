@@ -3,16 +3,18 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./Styles/App.css";
 import Main from "./Components/Main";
 import Navigation from "./Components/Navigation";
-import About from "./Components/About";
+import About from "./Components/about/About";
 import Customers from "./Components/Customers";
 import Reviews from "./Components/Reviews";
 import Detail from "./Components/Detail";
 import { Provider } from "./Context/CartContext";
 import Cart from "./Components/Cart";
 import LocationContext from "./Context/LocationContext";
-import Bakery from "./Components/Bakery";
+import Bakery from "./Components/Bakery/Bakery";
 import Map from "./Components/Map/Map";
 import { PickupOrDelivery } from "./Context/PickupOrDelivery";
+import footer from './Components/footer/Footer';
+
 
 function App() {
   return (

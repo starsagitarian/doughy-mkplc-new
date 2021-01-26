@@ -1,15 +1,15 @@
 /* eslint-disable */
 
-import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
-import DB from "../DB/db";
-import MapFinder from "./Map/Map";
-import { Button } from "@material-ui/core";
-import { LocationContext } from "../Context/LocationContext";
-import { PickupOrDeliveryContext } from "../Context/PickupOrDelivery";
-import { makeStyles } from "@material-ui/core/styles";
+import React,  {useState, useContext} from 'react';
+import {Link} from 'react-router-dom';
+import DB from '../../DB/db.json';
+import MapFinder from '../Map/Map'
+import {Button} from '@material-ui/core';
+import {LocationContext} from '../../Context/LocationContext';
+import { PickupOrDeliveryContext } from '../../Context/PickupOrDelivery';
+import { makeStyles } from '@material-ui/core/styles';
 
-import BakeryBool from "./BakeryBool";
+import BakeryBool from "../BakeryBool";
 
 const useStyles = makeStyles((theme) => ({
   root: {

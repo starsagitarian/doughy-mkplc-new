@@ -13,7 +13,7 @@ import CardContent from "@material-ui/core/CardContent";
 import { Button } from "@material-ui/core";
 import CardActions from "@material-ui/core/CardActions";
 import Typography from "@material-ui/core/Typography";
-import Footer from "./Footer";
+import Footer from "./footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
