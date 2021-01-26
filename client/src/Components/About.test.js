@@ -7,5 +7,5 @@ import "@testing-library/jest-dom/extend-expect";
 // primitive UI testing without snapshot
 test("About Component should be ... ", () => {
   render(<About />);
-  expect(screen.getByText).toMatch("About Page");
+  expect(screen.getByText(/About/i)).toBeInTheDocument();
 });

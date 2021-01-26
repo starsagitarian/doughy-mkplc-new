@@ -44,7 +44,6 @@ export default function ReviewRating(props: Headerprops) {
   return (
     <div className={classes.root}>
       <Rating
-      
         name="hover-feedback"
         value={value}
         precision={0.5}
