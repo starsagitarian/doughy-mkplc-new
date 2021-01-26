@@ -4,6 +4,8 @@
 import axios from "axios";
 require("dotenv").config();
 
+// mock API, added to test API
+
 export default async function getUsers() {
   try {
     const response = await axios.get(
