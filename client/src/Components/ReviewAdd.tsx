@@ -11,7 +11,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import ReviewRating from './ReviewRating';
 
-export default function SignUp() {
+export default function ReviewAdd() {
+
+
  /*  const [reviewData, setReviewData] = useState({
     reviewName: "",
     reviewType: "",
@@ -122,5 +124,5 @@ export default function SignUp() {
         </form>
       </div>
     </Container>
-  )
+  );
 }

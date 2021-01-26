@@ -64,5 +64,5 @@ export default function Review (props: Headerprops) {
         <Button color="primary" size="small" style={{height: 30}} >Learn More</Button>
       </CardActions>
     </Card>
-  )
+  );
 }

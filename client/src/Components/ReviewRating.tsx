@@ -29,13 +29,13 @@ interface Headerprops{
 }
 
 export function test(){
-  return "something"
+  return "something";
 }
 
 export default function ReviewRating(props: Headerprops) {
   
   React.useEffect(() => {
-    setValue(props.score)}, [])
+    setValue(props.score);}, []);
 
   const [value, setValue] = React.useState<number | null>(2);
   const [hover, setHover] = React.useState(-1);
