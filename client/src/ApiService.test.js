@@ -7,28 +7,34 @@ import ApiService from "./ApiService";
 // https://www.youtube.com/watch?v=9Yrd4aZkse8
 // https://www.leighhalliday.com/mocking-axios-in-jest-testing-async-functions
 
-it("should call axios and return users", async () => {
-  // setup
-  mockAxios.get.mockImplementationOnce(() =>
-    Promise.resolve({
-      data: [
-        { id: 1, name: "First Tester" },
-        { id: 2, name: "Second Tester" },
-      ],
-    })
-  );
+// setup
+const mockResponse = [
+  { id: 1, name: "First Tester" },
+  { id: 2, name: "Second Tester" },
+];
 
-  // work
-  const users = await ApiService();
-  console.log("TEST: Users: ", users);
+mockAxios.get.mockImplementationOnce(() =>
+  Promise.resolve({
+    data: mockResponse,
+  })
+);
 
-  // assertions / expects
-  expect(users).toEqual([
-    { id: 1, name: "First Tester" },
-    { id: 2, name: "Second Tester" },
-  ]);
-  expect(mockAxios.get).toHaveBeenCalledTimes(1);
-  expect(mockAxios.get).toHaveBeenCalledWith(
-    "https://jsonplaceholder.typicode.com/users"
-  );
+describe("ApiCalls:", () => {
+  // beforeEach(() => render(<MyComponent />));
+  // afterEach(() => component.unmount());
+
+  it("should call axios and return users", async () => {
+    // work
+    const users = await ApiService();
+    console.log("TEST: Users: ", users);
+
+    // assertions / expects
+    expect(users).toEqual(mockResponse);
+    expect(mockAxios.get).toHaveBeenCalledTimes(1);
+    expect(mockAxios.get).toHaveBeenCalledWith(
+      "https://jsonplaceholder.typicode.com/users"
+    );
+  });
+
+  it("next apiCall", () => {});
 });

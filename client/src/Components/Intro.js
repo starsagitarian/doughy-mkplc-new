@@ -78,6 +78,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// added just for fun, to positively influence team attitude :)
+
 export default function Intro() {
   const [open, setOpen] = React.useState(false);
   const classes = useStyles();
