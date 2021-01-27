@@ -22,8 +22,8 @@ export default function BakeryReviews() {
     
     <div style={{margin: 60}}>
 
-      <Button onClick={() => OpenForm()} color="primary" size="small" style={{height: 30}} >Add Reviews</Button>
-        
+      <Button onClick={() => OpenForm()} color="primary" size="small" style={{height: 30}} >Add Review</Button>
+        <button onClick={() => OpenForm()}>RBUTTON</button>
         {isClicked ? (
           <ReviewAdd/>
           ) : (
