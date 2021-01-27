@@ -45,7 +45,11 @@ export default function ReviewRating(props: Headerprops) {
 
   return (
     <div className={classes.root}>
-      <button data-testid='reset-button' onClick={() => HandleReset()}>RESET</button>
+      <p>
+      <button data-testid='reset-button' style={{background: "darkblue", color: "whitesmoke"}} onClick={() => HandleReset()}>RESET</button>
+      <p style={{background: "darkgreen", color: "whitesmoke"}}>VALUE:{value}</p>
+      <br/>
+      </p>
       <Rating data-testid='test-rating'
         name="hover-feedback"
         value={value}
@@ -56,7 +60,7 @@ export default function ReviewRating(props: Headerprops) {
         onChangeActive={(event, newHover) => {
           setHover(newHover);
         }}
-      />VALUE:{value}
+      />
       {value !== null && <Box ml={1}>{labels[hover !== -1 ? hover : value]}</Box>}
     </div>
   );

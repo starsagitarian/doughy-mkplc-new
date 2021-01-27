@@ -15,7 +15,7 @@ describe("Review Ratings:", () => {
   // mocking ...
   // render(<BakeryBool user={mockUser} />);
 
-  render(<ReviewRating score={5} />);
+  render(<ReviewRating score={mockProps} />);
   const resetButton=screen.getByTestId('reset-button');
   expect(resetButton).toBeInTheDocument();
   // expect(screen.getByText(/REVIEWS/i)).toBeInTheDocument();

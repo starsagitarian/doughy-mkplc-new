@@ -23,14 +23,19 @@ export default function BakeryReviews() {
     <div style={{margin: 60}}>
 
       <Button onClick={() => OpenForm()} color="primary" size="small" style={{height: 30}} >Add Review</Button>
-        <button onClick={() => OpenForm()}>RBUTTON</button>
+        <button style={{background: "darkblue", color: "whitesmoke"}} onClick={() => OpenForm()}>RBUTTON</button>
         {isClicked ? (
           <ReviewAdd/>
           ) : (
           <p style={{ background: "darkred", color: "white" }}>Add Review Form is OFF</p>
         )}
         <h1>REVIEWS</h1>
-      {reviews.map(review=><li key={review.customer} ><Review review={review}></Review></li>)}
+        {isClicked ? (
+           reviews.map(review=><li key={review.customer} ><Review review={review}></Review></li>)
+          ) : (
+          <p style={{ background: "darkred", color: "white" }}>Add Review Form is OFF</p>
+        )}
+     
     </div>
   );
 }
