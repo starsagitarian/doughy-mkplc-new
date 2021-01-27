@@ -21,14 +21,19 @@ test("If button is clicked should say TRUE / FALSE ... ", () => {
 
   render(<Reviews />);
   expect(screen.getByText(/REVIEWS/i)).toBeInTheDocument();
-  expect(screen.getByText(/RBUTTON/i)).toBeInTheDocument();
-  userEvent.click(screen.getByRole("button", { name: /RBUTTON/i }));
+  
+  const button=screen.getByText(/RBUTTON/i);
+  expect(button).toBeInTheDocument();
+
+  const buttonByRole= screen.getByRole("button", { name: /RBUTTON/i });
+  userEvent.click(buttonByRole);
+  
   render(<Review review={mockReview}/>);
   
-  const newReviewComponent=screen.getByText(/Something:4/i)
+  const newReviewComponent=screen.getByText(/Current Score:4/i);
   expect(newReviewComponent).toBeInTheDocument();
   console.log("newReviewComponent: ", newReviewComponent.nodeType, newReviewComponent.textContent);
-  expect(newReviewComponent.textContent).toEqual("Something:4");
+  expect(newReviewComponent.textContent).toEqual("Current Score:4");
 
   /*expect(screen.queryByText(/off/i)).not.toBeInTheDocument();
   userEvent.click(screen.getByText('Add'));

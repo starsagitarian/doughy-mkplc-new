@@ -43,7 +43,8 @@ export default function Review (props: Headerprops) {
 
   return (
     <Card className={classes.root}>
-      <p>Something:{props.review.score}</p>
+      <p>Current Score:{props.review.score}</p>
+      
       <CardContent>
       <Typography className={classes.title} color="textPrimary" gutterBottom>
         {props.review.bakery}
