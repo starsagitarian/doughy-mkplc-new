@@ -7,7 +7,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import userEvent from '@testing-library/user-event';
 
-//! Test The h1 render
+//! Test The h1 render----------------
 
 test('text to render on screen', () => {
   expect('CUSTOMERS').toMatch('CUSTOMERS');
