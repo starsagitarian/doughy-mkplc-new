@@ -41,7 +41,7 @@ export default function ReviewRating(props: Headerprops) {
   const [hover, setHover] = React.useState(-1);
   const classes = useStyles();
 
-  const HandleReset=()=>{setValue(0)};
+  const HandleReset=()=>{setValue(0);};
 
   return (
     <div className={classes.root}>

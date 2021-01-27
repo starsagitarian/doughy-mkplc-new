@@ -32,7 +32,7 @@ test("If button is clicked should say TRUE / FALSE ... ", () => {
   
   const newReviewComponent=screen.getByText(/Current Score:4/i);
   expect(newReviewComponent).toBeInTheDocument();
-  console.log("newReviewComponent: ", newReviewComponent.nodeType, newReviewComponent.textContent);
+  // screen.debug(newReviewComponent);
   expect(newReviewComponent.textContent).toEqual("Current Score:4");
 
   /*expect(screen.queryByText(/off/i)).not.toBeInTheDocument();
